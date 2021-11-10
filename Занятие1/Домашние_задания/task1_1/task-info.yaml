@@ -13,5 +13,9 @@ files:
 - name: tests/output.txt
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Wed, 10 Nov 2021 17:07:50 UTC
+  actual: <no output>
 record: -1
