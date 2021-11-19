@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 112
-    length: 14
+    length: 97
     placeholder_text: '# TODO объявить, что переменная count не локальная, а её надо
       искать в nonlocal области видимости'
     initial_state:
       length: 97
       offset: 112
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: nonlocal count
   text: |
@@ -49,7 +49,5 @@ files:
   visible: false
   learner_created: false
 status: Solved
-feedback:
-  time: Wed, 17 Nov 2021 16:08:10 UTC
 record: -1
 post_submission_on_open: true

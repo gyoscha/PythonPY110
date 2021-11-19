@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 54
-    length: 130
+    length: 67
     placeholder_text: 'fn()  # TODO перевести результат исходной функции в верхний
       регистр'
     initial_state:
       length: 67
       offset: 54
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       result = fn()
@@ -43,5 +43,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 17 Nov 2021 16:42:40 UTC
+  time: Thu, 18 Nov 2021 12:16:50 UTC
 record: -1

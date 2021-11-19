@@ -9,7 +9,6 @@ def task():
         yield 2 ** i
 
 
-
 if __name__ == "__main__":
     numbers = task()
 
