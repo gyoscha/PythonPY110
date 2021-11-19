@@ -1,14 +1,12 @@
 def pairwise(iterable):
     for i in range(len(iterable) - 1):
-        yield ','.join(iterable[i], iterable[i+1])
+        yield ((iterable[i][0] + iterable[i+1][0]) ** 2
+               + (iterable[i][1] + iterable[i+1][1]) ** 2) ** 0.5
 
 
-def task(*args):
-    list_ = (list(value) for value in args)
-    for i in pairwise(list_):
-        print(i)
-
-
+def task():
+    length = sum(i for i in pairwise(pts))
+    print(f'Длина ломаной линии = {length}')
 
 
 if __name__ == "__main__":
@@ -20,8 +18,7 @@ if __name__ == "__main__":
         (1.4, 2.9)
     ]
 
-    list_ = [list(value) for value in pts]
-    e = map(pairwise, list_)
-    print(next(e))
+    task()
+
 
 
