@@ -3,13 +3,11 @@ if __name__ == "__main__":
 
     filename = 'list_general.txt'
 
-    with open('list_one.txt', 'r') as f:
-        with open(filename, 'w') as f1:
-            for line in f:
-                f1.write(line)
-                f1.write('\n')
-
-    with open('list_two.txt', 'r') as f:
-        with open(filename, 'a') as f1:
-            for line in f:
-                f1.write(line)
+    with open('list_one.txt', 'r') as list_one:
+        with open('list_two.txt', 'r') as list_two:
+            with open(filename, 'w') as general_list:
+                for line in list_one:
+                    general_list.write(line)
+                    general_list.write('\n')
+                for line in list_two:
+                    general_list.write(line)
