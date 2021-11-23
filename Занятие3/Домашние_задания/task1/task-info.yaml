@@ -13,5 +13,18 @@ files:
 - name: tests/output.txt
   visible: false
   learner_created: false
-status: Unchecked
+- name: list_two.txt
+  visible: true
+  learner_created: true
+- name: list_one.txt
+  visible: true
+  learner_created: true
+- name: list_general.txt
+  visible: true
+  learner_created: true
+status: Failed
+feedback:
+  message: Incorrect
+  time: Tue, 23 Nov 2021 17:31:53 UTC
+  actual: <no output>
 record: -1

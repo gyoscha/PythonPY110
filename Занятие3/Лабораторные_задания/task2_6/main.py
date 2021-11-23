@@ -6,11 +6,13 @@ def task():
     with open(filename) as f:
         json_data = json.load(f)
 
-    return ...  # TODO отсортировать список словарей
+    return sorted(json_data, key=lambda item: item["length"])  # TODO отсортировать список словарей
 
 
 if __name__ == "__main__":
     data = task()
     print(json.dumps(data, indent=4))
 
-    # TODO дополнительно записать отсортированный список в JSON файл
+    filename = "input_2.json"
+    with open(filename, 'w') as f:
+        json.dump(data, f, indent=4)   # TODO дополнительно записать отсортированный список в JSON файл
