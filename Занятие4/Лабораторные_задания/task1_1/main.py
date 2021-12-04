@@ -2,7 +2,7 @@ import json
 import re
 
 BOOKS_FILE = "books.md"
-BOOK_REGEX = r"#{4}\s+(?P<position>\d+)\.\s+\[(?P<book>.+?)\]\((?P<book_url>.+?)\)\s+by\s+(?P<author>.+?)\s+\((?P<recommended>.+%).+\s+!\[.*?\]\((?P<cover_url>.+?)\)\s+\"(?P<description>.+?)\""
+BOOK_REGEX = r"#{4}\s+(?P<position>\d+)\.\s+\[(?P<book>.+?)\]\((?P<book_url>.+?)\)\s+by\s+(?P<author>.+?)\s+\((?P<recommended>\d{1,3}\.\d+%)\s+recommended\)\s+!\[.*?\]\((?P<cover_url>.+?)\)\s+\"(?P<description>.+?)\"\s+\[.*?\]\(.*?\)"
 
 
 def task():

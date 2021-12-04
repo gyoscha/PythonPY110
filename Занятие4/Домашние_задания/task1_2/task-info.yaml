@@ -32,5 +32,9 @@ files:
     """Небольшие программы случайно компилируются и выполняются правильно при первой же попытке.
     Но если это происходит с любой не тривиальной программой, то это очень и очень подозрительно."""
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sat, 04 Dec 2021 14:02:45 UTC
+  actual: <no output>
 record: -1
